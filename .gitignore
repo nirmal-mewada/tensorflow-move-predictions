@@ -19,3 +19,5 @@ praw.ini
 !requirements.txt
 
 !readme_images/*
+/venv/
+/.idea/
