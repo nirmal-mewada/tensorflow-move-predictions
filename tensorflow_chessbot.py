@@ -152,8 +152,12 @@ class ChessboardPredictor(object):
 # MAIN CLI
 
 def main(args):
+    if args.img:
+        img = args.img
+        args.url = None
+        args.filepath = None
     # Load image from filepath or URL
-    if args.filepath:
+    elif args.filepath:
         # Load image from file
         img = helper_image_loading.loadImageFromPath(args.filepath)
         args.url = None  # Using filepath.
@@ -179,10 +183,10 @@ def main(args):
         viz_link = helper_image_loading.getVisualizeLink(corners, args.url)
         print('---\nVisualize tiles link:\n %s\n---' % viz_link)
 
-    if args.url:
-        print("\n--- Prediction on url %s ---" % args.url)
-    else:
-        print("\n--- Prediction on file %s ---" % args.filepath)
+    # if args.url:
+    #     print("\n--- Prediction on url %s ---" % args.url)
+    # else:
+    #     print("\n--- Prediction on file %s ---" % args.filepath)
 
     # Initialize predictor, takes a while, but only needed once
     predictor = None
@@ -205,8 +209,8 @@ def main(args):
      #   tile_certainties.min(), tile_certainties.max(), tile_certainties.mean()))
 
     active = args.active
-    print("---\nPredicted FEN:\n%s %s - - 0 1" % (short_fen, active))
-    print("Final Certainty: %.1f%%" % (certainty * 100))
+    # print("---\nPredicted FEN:\n%s %s - - 0 1" % (short_fen, active))
+    # print("Final Certainty: %.1f%%" % (certainty * 100))
     return "%s %s - - 0 1" % (short_fen, active)
 
 
