@@ -1,4 +1,4 @@
-TensorFlow Chessbot - /u/ChessFenBot [◕ _ ◕]<sup>\* *I make FENs*</sup>
+TensorFlow Chessbot -Make Predictions
 ---
 ## Command Line Interface (CLI)
 
@@ -18,8 +18,9 @@ virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt 
 ```
-
+Note: This might not be accurate, cross check with working_dependencies.txt for accurate reference. 
 ### Running the CLI
+Note: For this branch, you may want to run predict_move.py which is using hard coded arguments as of now, but i have kept that in such way that you can easily modify same for CLI
 
 `tensorflow_chessbot.py` contains the library and script for running predictions on images passed by file or url.
 
