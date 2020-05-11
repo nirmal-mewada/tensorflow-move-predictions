@@ -1,12 +1,14 @@
 
 TensorFlow Move Predictions [◕ _ ◕]<sup>\* *I make FENs*</sup>
 ---
-###Important Note
+### Important Note
 This project is originally forked from https://github.com/Elucidation/tensorflow_chessbot
 
 I have made some enhancements on same for specific purpose.
-For life move predictions( Suggestions) use branch move_predict
+For live move predictions( Suggestions) use branch `move_predict`
+
 ---
+
 *CLI and Bot code lives on the [chessfenbot branch](https://github.com/Elucidation/tensorflow_chessbot/tree/chessfenbot)*
 
 [Live demo here](http://tetration.xyz/ChessboardFenTensorflowJs/) using [TensorflowJs](https://js.tensorflow.org/)
